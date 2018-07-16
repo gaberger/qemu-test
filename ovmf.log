@@ -1,0 +1,254 @@
+SeaBIOS (version 1.10.2-1ubuntu1)
+BUILD: gcc: (Ubuntu 6.3.0-16ubuntu6) 6.3.0 20170506 binutils: (GNU Binutils for Ubuntu) 2.28
+No Xen hypervisor found.
+Running on QEMU (i440fx)
+Running on KVM
+RamSize: 0x40000000 [cmos]
+Relocating init from 0x000da800 to 0x3fface20 (size 78144)
+Found QEMU fw_cfg
+QEMU fw_cfg DMA interface supported
+RamBlock: addr 0x0000000000000000 len 0x0000000040000000 [e820]
+Moving pm_base to 0x600
+=== PCI bus & bridge init ===
+PCI: pci_bios_init_bus_rec bus = 0x0
+=== PCI device probing ===
+Found 7 PCI devices (max PCI bus is 00)
+=== PCI new allocation pass #1 ===
+PCI: check devices
+=== PCI new allocation pass #2 ===
+PCI: IO: c000 - c08f
+PCI: 32: 0000000080000000 - 00000000fec00000
+PCI: map device bdf=00:04.0  bar 1, addr 0000c000, size 00000040 [io]
+PCI: map device bdf=00:02.0  bar 4, addr 0000c040, size 00000020 [io]
+PCI: map device bdf=00:03.0  bar 3, addr 0000c060, size 00000020 [io]
+PCI: map device bdf=00:01.1  bar 4, addr 0000c080, size 00000010 [io]
+PCI: map device bdf=00:03.0  bar 0, addr f4000000, size 04000000 [mem]
+PCI: map device bdf=00:03.0  bar 1, addr f8000000, size 04000000 [mem]
+PCI: map device bdf=00:04.0  bar 6, addr fc000000, size 00080000 [mem]
+PCI: map device bdf=00:04.0  bar 0, addr fc080000, size 00020000 [mem]
+PCI: map device bdf=00:03.0  bar 6, addr fc0a0000, size 00010000 [mem]
+PCI: map device bdf=00:03.0  bar 2, addr fc0b0000, size 00002000 [mem]
+PCI: init bdf=00:00.0 id=8086:1237
+PCI: init bdf=00:01.0 id=8086:7000
+PIIX3/PIIX4 init: elcr=00 0c
+PCI: init bdf=00:01.1 id=8086:7010
+PCI: init bdf=00:01.3 id=8086:7113
+Using pmtimer, ioport 0x608
+PCI: init bdf=00:02.0 id=8086:7020
+PCI: init bdf=00:03.0 id=1b36:0100
+PCI: init bdf=00:04.0 id=8086:100e
+PCI: Using 00:03.0 for primary VGA
+Found 1 cpu(s) max supported 1 cpu(s)
+Copying PIR from 0x3ffbfc20 to 0x000f6b80
+Copying MPTABLE from 0x00006e00/3ffa3dd0 to 0x000f6a90
+Copying SMBIOS entry point from 0x00006e00 to 0x000f68f0
+Scan for VGA option rom
+Running option rom at c000:0003
+Start SeaVGABIOS (version 1.10.2-1ubuntu1)
+VGABUILD: gcc: (Ubuntu 6.3.0-16ubuntu6) 6.3.0 20170506 binutils: (GNU Binutils for Ubuntu) 2.28
+enter vga_post:
+   a=00000018  b=0000ffff  c=00000000  d=0000ffff ds=0000 es=f000 ss=0000
+  si=00000000 di=00006f60 bp=00000000 sp=00006d3a cs=f000 ip=d378  f=0000
+VBE DISPI: bdf 00:03.0, bar 0
+VBE DISPI: lfb_addr=f4000000, size 16 MB
+Turning on vga text mode console
+set VGA mode 3
+SeaBIOS (version 1.10.2-1ubuntu1)
+UHCI init on dev 00:02.0 (io=c040)
+ATA controller 1 at 1f0/3f4/0 (irq 14 dev 9)
+ATA controller 2 at 170/374/0 (irq 15 dev 9)
+Found 0 lpt ports
+Found 0 serial ports
+PS2 keyboard initialized
+ata0-0: QEMU HARDDISK ATA-7 Hard-Disk (210 GiBytes)
+Searching bootorder for: /pci@i0cf8/*@1,1/drive@0/disk@0
+All threads complete.
+Scan for option roms
+Running option rom at c980:0003
+pmm call arg1=1
+pmm call arg1=0
+pmm call arg1=1
+pmm call arg1=0
+Searching bootorder for: /pci@i0cf8/*@4
+Searching bootorder for: /rom@genroms/kvmvapic.bin
+Searching bootorder for: HALT
+drive 0x000f6850: PCHS=16383/16/63 translation=lba LCHS=1024/255/63 s=441815040
+Running option rom at ca80:0003
+Space available for UMB: cd000-ed000, f6400-f6850
+Returned 131072 bytes of ZoneHigh
+e820 map has 7 items:
+  0: 0000000000000000 - 000000000009fc00 = 1 RAM
+  1: 000000000009fc00 - 00000000000a0000 = 2 RESERVED
+  2: 00000000000f0000 - 0000000000100000 = 2 RESERVED
+  3: 0000000000100000 - 000000003ffe0000 = 1 RAM
+  4: 000000003ffe0000 - 0000000040000000 = 2 RESERVED
+  5: 00000000feffc000 - 00000000ff000000 = 2 RESERVED
+  6: 00000000fffc0000 - 0000000100000000 = 2 RESERVED
+enter handle_19:
+  NULL
+Booting from Hard Disk...
+Booting from 0000:7c00
+VBE current mode=3
+VBE mode info request: 100
+VBE mode info request: 101
+VBE mode info request: 102
+VBE mode info request: 103
+VBE mode info request: 104
+VBE mode info request: 105
+VBE mode info request: 106
+VBE mode info request: 107
+VBE mode info request: 10d
+VBE mode info request: 10e
+VBE mode info request: 10f
+VBE mode info request: 110
+VBE mode info request: 111
+VBE mode info request: 112
+VBE mode info request: 113
+VBE mode info request: 114
+VBE mode info request: 115
+VBE mode info request: 116
+VBE mode info request: 117
+VBE mode info request: 118
+VBE mode info request: 119
+VBE mode info request: 11a
+VBE mode info request: 11b
+VBE mode info request: 11c
+VBE mode info request: 11d
+VBE mode info request: 11e
+VBE mode info request: 11f
+VBE mode info request: 140
+VBE mode info request: 141
+VBE mode info request: 142
+VBE mode info request: 143
+VBE mode info request: 144
+VBE mode info request: 145
+VBE mode info request: 146
+VBE mode info request: 147
+VBE mode info request: 148
+VBE mode info request: 149
+VBE mode info request: 14a
+VBE mode info request: 14b
+VBE mode info request: 14c
+VBE mode info request: 175
+VBE mode info request: 176
+VBE mode info request: 177
+VBE mode info request: 178
+VBE mode info request: 179
+VBE mode info request: 17a
+VBE mode info request: 17b
+VBE mode info request: 17c
+VBE mode info request: 17d
+VBE mode info request: 17e
+VBE mode info request: 17f
+VBE mode info request: 180
+VBE mode info request: 181
+VBE mode info request: 182
+VBE mode info request: 183
+VBE mode info request: 184
+VBE mode info request: 185
+VBE mode info request: 186
+VBE mode info request: 187
+VBE mode info request: 188
+VBE mode info request: 189
+VBE mode info request: 18a
+VBE mode info request: 18b
+VBE mode info request: 18c
+VBE mode info request: 18d
+VBE mode info request: 18e
+VBE mode info request: 18f
+VBE mode info request: 190
+VBE mode info request: 191
+VBE mode info request: 192
+VBE mode info request: 143
+VBE current mode=3
+VBE mode set: 4143
+set VGA mode 143
+VBE mode set: 3
+set VGA mode 3
+VBE mode info request: 100
+VBE mode info request: 101
+VBE mode info request: 102
+VBE mode info request: 103
+VBE mode info request: 104
+VBE mode info request: 105
+VBE mode info request: 106
+VBE mode info request: 107
+VBE mode info request: 10d
+VBE mode info request: 10e
+VBE mode info request: 10f
+VBE mode info request: 110
+VBE mode info request: 111
+VBE mode info request: 112
+VBE mode info request: 113
+VBE mode info request: 114
+VBE mode info request: 115
+VBE mode info request: 116
+VBE mode info request: 117
+VBE mode info request: 118
+VBE mode info request: 119
+VBE mode info request: 11a
+VBE mode info request: 11b
+VBE mode info request: 11c
+VBE mode info request: 11d
+VBE mode info request: 11e
+VBE mode info request: 11f
+VBE mode info request: 140
+VBE mode info request: 141
+VBE mode info request: 142
+VBE mode info request: 143
+VBE mode info request: 144
+VBE mode info request: 145
+VBE mode info request: 146
+VBE mode info request: 147
+VBE mode info request: 148
+VBE mode info request: 149
+VBE mode info request: 14a
+VBE mode info request: 14b
+VBE mode info request: 14c
+VBE mode info request: 175
+VBE mode info request: 176
+VBE mode info request: 177
+VBE mode info request: 178
+VBE mode info request: 179
+VBE mode info request: 17a
+VBE mode info request: 17b
+VBE mode info request: 17c
+VBE mode info request: 17d
+VBE mode info request: 17e
+VBE mode info request: 17f
+VBE mode info request: 180
+VBE mode info request: 181
+VBE mode info request: 182
+VBE mode info request: 183
+VBE mode info request: 184
+VBE mode info request: 185
+VBE mode info request: 186
+VBE mode info request: 187
+VBE mode info request: 188
+VBE mode info request: 189
+VBE mode info request: 18a
+VBE mode info request: 18b
+VBE mode info request: 18c
+VBE mode info request: 18d
+VBE mode info request: 18e
+VBE mode info request: 18f
+VBE mode info request: 190
+VBE mode info request: 191
+VBE mode info request: 192
+VBE mode info request: 0
+VBE mode info request: 1
+VBE mode info request: 2
+VBE mode info request: 3
+VBE mode info request: 4
+VBE mode info request: 5
+VBE mode info request: 6
+VBE mode info request: 7
+VBE mode info request: d
+VBE mode info request: e
+VBE mode info request: f
+VBE mode info request: 10
+VBE mode info request: 11
+VBE mode info request: 12
+VBE mode info request: 13
+VBE mode info request: 6a
+set VGA mode 3

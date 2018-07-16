@@ -8,7 +8,7 @@ else
   echo "Creating VM $UUID"
   mkdir machines/$UUID
   dd if=/dev/zero of=machines/${UUID}/${UUID}.drive bs=1 count=1 seek=$(( (10 * 1024 * 1024 * 1024) - 1)) 
-  cp /usr/share/OVMF/OVMF_VARS.fd machines/${UUID}/${UUID}_OVMF_VARS.fd
+#  cp /usr/share/OVMF/OVMF_VARS.fd machines/${UUID}/${UUID}_OVMF_VARS.fd
 fi
 
 read -r -d '' VAR <<EOF
@@ -29,9 +29,7 @@ qemu-system-x86_64
 -no-user-config 
 -smp 1,sockets=1,cores=1,threads=1 
 -device e1000,netdev=net0,mac=00:aa:00:60:00:01  
--drive file=machines/${UUID}/${UUID}.drive,format=raw
--drive file=/usr/share/OVMF/OVMF_CODE.fd,if=pflash,format=raw,unit=0,readonly=on 
--drive if=pflash,format=raw,file=machines/${UUID}/${UUID}_OVMF_VARS.fd
+-drive file=/home/gary/test/qemu-test/openmanage_enterprise.qcow2
 EOF
 
 
