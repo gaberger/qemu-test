@@ -6,9 +6,13 @@ Install Utils
 Setup Tap interface and bind to docker bridge
 
 ``` sudo tunctl -t tap0 -u vagrant```
+ip tuntap add dev tun0 mode tun
+
+ip link add {bridge} type bridge
+
 Add interface to bridge
 ```sudo brctl addif docker0 tap0```
-
+ip link set dev ${interface name} master ${bridge name}
 Enable interface
 
 ```sudo ip link set tap0 up```
