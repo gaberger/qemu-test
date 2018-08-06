@@ -1,0 +1,4 @@
+onie-recovery-x86_64-kvm_x86_64-r0.iso filter=lfs diff=lfs merge=lfs -text
+kvm_x86_64-r0.vmlinuz filter=lfs diff=lfs merge=lfs -text
+onie-updater-x86_64-kvm_x86_64-r0 filter=lfs diff=lfs merge=lfs -text
+kvm_x86_64-r0.vmlinuz.unsigned filter=lfs diff=lfs merge=lfs -text
